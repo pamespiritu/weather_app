@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <meta charset="UTF-8" />
+   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+   <title>Let's Work Out!</title>
+ </head>
+ <style>
+   body{
+   font-family: Georgia, 'Times New Roman', Times, serif;
+  background: linear-gradient(359.3deg, rgb(196, 214, 252) 1%, rgba(187, 187, 187, 0) 70.9%);
+   }
+   h1 {
+     text-align: center;
+     margin: 30px auto;
+     width:65%;
+     font-size: 35px;
+     font-weight: 100px;
+     color:#D96349;
+     line-height:50px;
+   }
+   h2 {
+     text-align: center;
+     margin: 30px auto;
+     font-size: 30px;
+     color:#D96349;
+   }
+   img {
+       display: block;
+       margin: 0 auto;
+   }
+   h3 {
+       text-align: center;
+       color:#D96349
+   }
+   div {
+       display:block;
+       text-align: center;
+       line-height:1.5;
+       margin: auto;
+       width:65%;
+   }
+   .free-workout{
+       text-align: center;
+   }
+   button {
+      display:block;
+      margin: 0 auto;
+      padding: 0 auto;
+   }
+   .learn-more{
+     text-align: center;
+       display:block;
+       text-decoration:none;
+       color:#D96349;
+       font-size: 15px;
+   }
+   .Health-condition{
+       font-size:20px;
+   }
+   .contact-platform{
+       color:#D96349;
+   }
+   strong {
+       color:#D96349;
+   }
+   button{
+       background: #D96349;
+       display: block;
+       color: white;
+       margin: 0 auto;
+       padding: 15px 20px;
+       font-size: 18px;
+       border: 1px solid black;
+       border-radius: 50px;
+       box-shadow: 3px 3px 2px gray;
+       transition: all 200ms ease-in-out;
+   }
+   button:hover{
+       background:white;
+       color:#D96349;
+       cursor:pointer;
+   }
+ </style>
+ <body>
+   <h1>Health is Wealth</h1>
+   <h2>The Benefits of Working Out</h2>
+   <img
+     src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/023/419/original/workout_img.jpeg?1640226781"
+     alt="Fitness-class"
+     width="1000"
+   />
+   <h3>
+     Working out improves your overall mood and diminish the
+     feelings of depression, anxiety, and stress.
+   </h3>
+   <div>
+     It causes alterations in the brain areas that control stress and anxiety.
+     It can also improve brain sensitivity to the neurotransmitters, serotonin
+     and norephinephrine, which help to alleviate depressive symptoms. Working
+     out can also boost the production of endorphins, which are known to assist
+     positive emotions and lower pain perception.
+     <strong
+       >Excercising regularily can improve your overall mood and reduce the
+       feelings of anxiety and depression.
+     </strong>
+  </div>
+</br>
+   <h3>
+       Lack of consistent physical activity is a primary cause of chronic disease.
+   </h3>
+ <div>
+       Insulin sensitivity, heart health, and body composition have all been found to improve with regular exercise. It can also help to lower blood pressure and cholesterol. Exercise, in particular, can help reduce or prevent the following chronic health disorders: <em>Type 2 Diabetes, heart disease, and multiple types of cancer.</em>
+  </div>
+   <h3>
+       Exercising can help with relaxation and sleep quality.
+   </h3>
+   <div>
+     The energy depletion (loss) that occurs during exercise activates restorative processes during sleep, which improves sleep quality. It is hypothesized that the increase in body temperature that occurs during exercise improves sleep quality by allowing the body temperature to decline during sleep.
+     <strong>Regular physical activity can help you sleep better and feel more energized throughout the day.</strong>
+   </div>
+ <hr/>
+<p class="free-workout">
+   If you're ready to start your fitness journey, claim your <strong>FREE</strong> workout plan by clicking the button below!
+</p>
+ <button>Free Workout Plan</button>
+<p class="free-workout">If you have any questions regarding the workout plan or anything, don't hesitate to contact me through email or number and I will get back to you!</p>
+<div class="contact-details">
+   <span class="contact-platform">Email: </span> pamefitness@gmail.com
+   <span class="contact-platform">Number: </span> +12345678
+</div>
+</br>
+   <a href="https://www.cdc.gov/physicalactivity/basics/pa-health/index.htm" target="_blank" class="learn-more">
+       Learn more here!
+   </a>
+ </body>
+ <script>
+   function freePlan () {
+   let name = prompt("What is your name?");
+   let email = prompt("What is your email?");
+   let age = prompt ("How old are you?");
+ 
+   if (age < 18){
+     alert("Sorry, come back next time! ☹️");
+   } else {
+     alert("Yay! Check your email for the workout plan! 🏋️");
+   }
+ }
+ let freeButton = document.querySelector("button");
+ freeButton.addEventListener("click", freePlan);
+ </script>
+</html>
+ 
